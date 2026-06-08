@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuna IT Solutions</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            padding:20px 0;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,51,102,.8), rgba(0,51,102,.8)),
+                       url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:120px 20px;
+        }
+
+        .hero h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:1.2rem;
+            margin-bottom:25px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#ff9900;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:60px 20px;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-bottom:40px;
+            color:#003366;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:#f5f5f5;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,.1);
+        }
+
+        .card h3{
+            color:#003366;
+            margin-bottom:10px;
+        }
+
+        .about{
+            background:#f9f9f9;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .contact p{
+            margin:10px 0;
+        }
+
+        @media(max-width:768px){
+            nav{
+                flex-direction:column;
+            }
+
+            nav ul{
+                margin-top:15px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h1{
+                font-size:2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <h2>AMUNA IT SOLUTIONS</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <h1>Empowering Digital Transformation</h1>
+    <p>Innovative IT Solutions for Government, Education, and Businesses</p>
+    <a href="#services" class="btn">Our Services</a>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+
+        <p>
+            Amuna IT Solutions is a Papua New Guinea-based technology company
+            specializing in Oracle APEX development, database solutions,
+            enterprise applications, cloud services, and digital transformation.
+            We deliver reliable and scalable systems that help organizations
+            improve efficiency, transparency, and service delivery.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Oracle APEX Development</h3>
+                <p>Custom web applications built on Oracle APEX for government and private sectors.</p>
+            </div>
+
+            <div class="card">
+                <h3>Database Solutions</h3>
+                <p>Oracle database design, administration, backup, security, and performance tuning.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Solutions</h3>
+                <p>Oracle Cloud Infrastructure deployment and cloud migration services.</p>
+            </div>
+
+            <div class="card">
+                <h3>School Management Systems</h3>
+                <p>Student registration, assessment, selection, and education management systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Human Resource Systems</h3>
+                <p>Recruitment, payroll, leave management, and employee information systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Asset Registry Systems</h3>
+                <p>Track and manage vehicles, equipment, licenses, and government assets.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact">
+            <p><strong>Company:</strong> Amuna IT Solutions</p>
+            <p><strong>Location:</strong> Papua New Guinea</p>
+            <p><strong>Email:</strong> info@amunaitsolutions.com</p>
+            <p><strong>Phone:</strong> +675 XXX XXXX</p>
+            <p><strong>Website:</strong> www.amunaitsolutions.com</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>
+        © 2026 Amuna IT Solutions. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
